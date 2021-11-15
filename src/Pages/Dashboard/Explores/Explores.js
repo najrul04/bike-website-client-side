@@ -27,7 +27,7 @@ const Explores = ({date}) => {
         .then(res=> res.json())
         .then(data => setExplores(data))
 
-    } , [date])
+    } , [date, user.email, token])
     return (
         <div>
 

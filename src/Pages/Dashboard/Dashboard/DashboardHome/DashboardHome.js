@@ -1,11 +1,9 @@
 import * as React from 'react';
 import { Grid } from '@mui/material';
-import Explores from '../../Explores/Explores';
 import useAuth from '../../../../hooks/useAuth';
 
     const DashboardHome = () => {
 
-    const [date, setDate] = React.useState(new Date())
 
     const {user} = useAuth();
 
@@ -22,20 +20,6 @@ import useAuth from '../../../../hooks/useAuth';
                             <p>You Can Explore in here as you wish to </p>
 
                     </div>
-
-
-            {/* <Calendar
-            
-            date={date}
-            setDate={setDate}
-
-            ></Calendar> */}
-
-        </Grid>
-
-        <Grid item xs={12} sm={7}>
-
-            {/* <Explores date={date}></Explores> */}
 
         </Grid>
 

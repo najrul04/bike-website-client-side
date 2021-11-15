@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import login from '../../../images/login.jpg'
-import Navigation from '../../Shared/Navigation/Navigation';
-import TopHeader from '../../Shared/TopHeader/TopHeader';
 
 const Login = () => {
 

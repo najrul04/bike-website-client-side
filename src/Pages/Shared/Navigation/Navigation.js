@@ -5,7 +5,6 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
@@ -59,7 +58,7 @@ const Navigation = () => {
 
             :
 
-            <NavLink style={{ color: "white" , margin: '0 20px'}} style={{ color: "white", textDecoration: 'none'}} to="/login"> 
+            <NavLink style={{ color: "white", textDecoration: 'none', margin: '0 20px'}} to="/login"> 
            
               <Button color="inherit">Login</Button> 
          

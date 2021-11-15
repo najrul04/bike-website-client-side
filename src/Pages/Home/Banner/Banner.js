@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
-import chair from '../../../images/chair.png';
+import explore_bike from '../../../images/explore_bike.png';
 import bg from '../../../images/bg1.jpg';
 import { Button, Typography, Container, Box } from '@mui/material';
 
@@ -51,7 +51,7 @@ const Banner = () => {
 
         </Grid>
         <Grid item xs={12} md={6} style={verticalCenter}>
-            <img style={{width:500}} src={chair} alt="" />
+            <img style={{width:500}} src={explore_bike} alt="" />
         </Grid>
       </Grid>
     </Container>

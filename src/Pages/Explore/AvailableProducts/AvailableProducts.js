@@ -1,4 +1,4 @@
-import { Alert, Container, Grid, Typography } from '@mui/material';
+import { Alert, Container, Grid} from '@mui/material';
 import React, { useState } from 'react';
 import ProductsList from '../ProductsList/ProductsList';
 import bike1 from '../../../images/bike1.jpg'
@@ -17,9 +17,9 @@ const productsLists = [
     {
 
         id: 1,
-        name: 'Oral Surgery',
-        description: '07.00 PM - 08.00 PM',
-        price: 10,
+        name: 'Stylish Black',
+        description: 'Stylish Black Bike will give you the perfect feeling of having a ride that takes you anywhere you wish for.',
+        price: 5000,
         img: bike1
 
     }
@@ -28,9 +28,9 @@ const productsLists = [
     {
 
         id: 2,
-        name: 'Oral Surgery',
-        description: '07.00 PM - 08.00 PM',
-        price: 10,
+        name: 'Yellow Fever',
+        description: 'A very stylish bike which is 500cc bike that you could ride and fly',
+        price: 6000,
         img: bike2
 
     }
@@ -39,9 +39,9 @@ const productsLists = [
     {
 
         id: 3,
-        name: 'Oral Surgery',
-        description: '07.00 PM - 08.00 PM',
-        price: 10,
+        name: 'Mountain Motorcycle',
+        description: 'A perfect Bike for you that will help you to ride in mountain safely with more fun way!',
+        price: 7000,
         img: bike3
 
     }
@@ -50,9 +50,9 @@ const productsLists = [
     {
 
         id: 4,
-        name: 'Oral Surgery',
-        description: '07.00 PM - 08.00 PM',
-        price: 10,
+        name: 'Futuristic Bike',
+        description: 'The kind of bike that is futuristic and it is going to be amazing and more common in upcoming future',
+        price: 8000,
         img: bike4
 
     }
@@ -61,9 +61,9 @@ const productsLists = [
     {
 
         id: 5,
-        name: 'Oral Surgery',
-        description: '07.00 PM - 08.00 PM',
-        price: 10,
+        name: 'Racing Bike',
+        description: 'Sometimes it is fun to do racing once in for a while which you can do with lots of fun.',
+        price: 9000,
         img: bike5
 
     }
@@ -72,9 +72,9 @@ const productsLists = [
     {
 
         id: 6,
-        name: 'Oral Surgery',
-        description: '07.00 PM - 08.00 PM',
-        price: 10,
+        name: 'Touring Stylish Bike',
+        description: 'Best bike for touring and going out to have fun here and there',
+        price: 10000,
         img: bike6
 
     }
@@ -83,9 +83,9 @@ const productsLists = [
     {
 
         id: 7,
-        name: 'Oral Surgery',
-        description: '07.00 PM - 08.00 PM',
-        price: 10,
+        name: 'Harley Davidson',
+        description: 'Harley-Davidson, Inc., H-D, or Harley, is an American motorcycle manufacturer founded in 1903 in Milwaukee, Wisconsin. Along with Indian',
+        price: 11000,
         img: bike7
     }
     ,
@@ -93,9 +93,9 @@ const productsLists = [
     {
 
         id: 8,
-        name: 'Oral Surgery',
-        description: '07.00 PM - 08.00 PM',
-        price: 10,
+        name: 'Dessert Bike',
+        description: 'An all-terrain vehicle (ATV), also known as a light utility vehicle (LUV),[1] a quad bike, or simply a quad, as defined by the American National Standards Institute (ANSI); ',
+        price: 11000,
         img: bike8
 
     }
@@ -104,9 +104,9 @@ const productsLists = [
     {
 
         id: 9,
-        name: 'Oral Surgery',
-        description: '07.00 PM - 08.00 PM',
-        price: 10,
+        name: 'Night Wing',
+        description: 'If you are a lover of Batman you will know  that night wing bike is named after one of bruce waynes apprentice.',
+        price: 12000,
         img: bike9
 
     }
@@ -115,9 +115,9 @@ const productsLists = [
     {
 
         id: 10,
-        name: 'Oral Surgery',
-        description: '07.00 PM - 08.00 PM',
-        price: 10,
+        name: 'Competitive Bike',
+        description: 'A racing bicycle, also known as a road bike, and once popularly known as a ten speed',
+        price: 13000,
         img: bike10
 
     }

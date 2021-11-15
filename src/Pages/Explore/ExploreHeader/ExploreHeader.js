@@ -2,7 +2,7 @@ import { Container, Grid, Typography } from '@mui/material';
 import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import chair from '../../../images/chair.png'
+import explore_bike from '../../../images/explore_bike.png'
 
 
 const ExploreHeader = ({date, setDate}) => {
@@ -34,7 +34,7 @@ const ExploreHeader = ({date, setDate}) => {
 
                 <Grid item xs={12} md={6}>
 
-                <img style={{width: '100%'}} src={chair} alt='' />
+                <img style={{width: '100%'}} src={explore_bike} alt='' />
 
                 </Grid>
 

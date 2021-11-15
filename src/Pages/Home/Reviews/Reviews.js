@@ -6,7 +6,6 @@ import Typography from '@mui/material/Typography';
 import first from '../../../images/1.jpg'
 import second from '../../../images/2.jpg'
 import third from '../../../images/3.jpg'
-
 import Review from '../Review/Review';
 
 const reviews = [

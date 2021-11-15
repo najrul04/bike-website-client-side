@@ -1,16 +1,14 @@
 import './App.css';
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './Pages/Home/Home/Home';
 import Explore from './Pages/Explore/Explore/Explore';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
-import Navigation from './Pages/Shared/Navigation/Navigation';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import NotFound from './Pages/NotFound/NotFound';
-import TopHeader from './Pages/Shared/TopHeader/TopHeader';
 
 function App() {
   return (
