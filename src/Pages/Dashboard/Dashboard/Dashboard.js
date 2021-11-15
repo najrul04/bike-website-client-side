@@ -22,13 +22,17 @@ import {
   useRouteMatch
 } from "react-router-dom";
 import { Button, Grid } from '@mui/material';
-import Calendar from '../../Shared/Calendar/Calendar';
 import Explores from '../Explores/Explores'
 import DashboardHome from './DashboardHome/DashboardHome';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import MyOrders from '../MyOrders/MyOrders';
 import useAuth from './../../../hooks/useAuth'
 import AdminRoute from '../../Login/AdminRoute/AdminRoute';
+import Payment from '../Payment/Payment';
+import Reviews from '../Reviews/Reviews';
+import ManageAllOrders from '../ManageAllOrders/ManageAllOrders';
+import AddAProduct from '../AddAProduct/AddAProduct';
+import ManageProducts from '../ManageProducts/ManageProducts';
 
 const drawerWidth = 200;
 
@@ -48,21 +52,30 @@ function Dashboard(props) {
       <Toolbar />
       
       <Divider />
-      <Link style={{color: 'black', textDecoration: 'none', marginRight: '10px'}} to="/home"><Button>Home</Button></Link> <br/>
-      <Link style={{color: 'black', textDecoration: 'none', marginRight: '10px'}} to={`${url}`}><Button>Dashboard</Button></Link>
+      <Link style={{color: 'black', textDecoration: 'none', marginRight: '10px'}}  to="/home"><Button><i className="fas fa-home">Home</i></Button></Link> <br/>
+      <Link style={{color: 'black', textDecoration: 'none', marginRight: '10px'}} to={`${url}/payment`}><Button>Payment</Button></Link> <br/>
+      <Link style={{color: 'black', textDecoration: 'none', marginRight: '10px'}} to={`${url}/myOrders`}><Button>My Order</Button></Link> <br />
+      <Link style={{color: 'black', textDecoration: 'none', marginRight: '10px'}} to={`${url}/reviews`}><Button>Reviews</Button></Link>
 
       {
 
           admin && <Box>
 
       <Link style={{color: 'black', textDecoration: 'none', marginRight: '10px'}} to={`${url}/makeAdmin`}> <Button>Make Admin</Button> </Link>
-      <Link style={{color: 'black', textDecoration: 'none', marginRight: '10px'}} to={`${url}/myOrders`}><Button>My Order</Button></Link>
+
+      <Link style={{color: 'black', textDecoration: 'none', marginRight: '10px'}} to={`${url}/manageAllOrders`}> <Button>Manage All Orders</Button> </Link>
+
+      <Link style={{color: 'black', textDecoration: 'none', marginRight: '10px'}} to={`${url}/AddAProduct`}> <Button>Add a Product</Button> </Link>
+
+      <Link style={{color: 'black', textDecoration: 'none', marginRight: '10px'}} to={`${url}/ManageProducts`}> <Button>Manage Products</Button> </Link>
+
+      
 
           </Box>
 
       }
       
-      <List>
+      {/* <List>
         {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
           <ListItem button key={text}>
             <ListItemIcon>
@@ -71,7 +84,7 @@ function Dashboard(props) {
             <ListItemText primary={text} />
           </ListItem>
         ))}
-      </List>
+      </List> */}
      
     </div>
   );
@@ -145,14 +158,47 @@ function Dashboard(props) {
         <Route exact path={path}>
           <DashboardHome></DashboardHome>
         </Route>
-        <AdminRoute path={`${path}/makeAdmin`}>
-            <MakeAdmin></MakeAdmin>
-        </AdminRoute>
-        <AdminRoute path={`${path}/myOrders`}>
+
+        <Route exact path={`${path}/payment`}>
+            <Payment></Payment>
+        </Route>
+
+        <Route path={`${path}/myOrders`}>
 
           <MyOrders></MyOrders>
 
+        </Route>
+
+        <Route path={`${path}/reviews`}>
+
+          <Reviews></Reviews>
+
+        </Route>
+
+        <AdminRoute path={`${path}/makeAdmin`}>
+
+            <MakeAdmin></MakeAdmin>
+
         </AdminRoute>
+
+        <AdminRoute path={`${path}/manageAllOrders`}>
+
+            <ManageAllOrders></ManageAllOrders>
+
+        </AdminRoute>
+
+        <AdminRoute path={`${path}/AddAProduct`}>
+
+            <AddAProduct></AddAProduct>
+
+        </AdminRoute>
+
+        <AdminRoute path={`${path}/ManageProducts`}>
+
+            <ManageProducts></ManageProducts>
+
+        </AdminRoute>
+
       </Switch>
 
       </Box>

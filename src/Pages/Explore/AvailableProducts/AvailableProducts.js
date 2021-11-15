@@ -130,7 +130,6 @@ const AvailableProducts = ({date}) => {
 
     return (
         <Container>
-            <Typography variant="h5" sx={{color: 'info.secondary', mb:2, fontWeight: 600 }}>Available Product {date.toDateString()} </Typography>
 
             {buyNowSuccess && <Alert severity="success">Purchase Application Sent Successfully!</Alert>}
 
