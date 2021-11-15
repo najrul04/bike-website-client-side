@@ -18,7 +18,7 @@ const MakeAdmin = () => {
 
         const user = {email};
 
-        fetch('http://localhost:5000/users/admin', {
+        fetch('https://immense-wave-27384.herokuapp.com/users/admin', {
 
             method: 'PUT',
             headers: {

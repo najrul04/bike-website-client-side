@@ -14,7 +14,7 @@ const Explores = ({date}) => {
 
     useEffect( () => {
 
-        const url = `http://localhost:5000/explores?email=${user.email}&date=${date}`
+        const url = `https://immense-wave-27384.herokuapp.com/explores?email=${user.email}&date=${date}`
         fetch(url, {
 
             headers: {

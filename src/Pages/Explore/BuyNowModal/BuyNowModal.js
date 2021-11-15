@@ -52,7 +52,7 @@ const BuyNowModal = ({openBuyNow, handleBuyNowClose, productsList, date, setBuyN
 
         // Send to Server
 
-        fetch('http://localhost:5000/explores', {
+        fetch('https://immense-wave-27384.herokuapp.com/explores', {
 
           method: 'POST',
           headers: {
