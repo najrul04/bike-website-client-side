@@ -6,7 +6,7 @@ This project was Created with the help of Bootstrap, React, Vanilla CSS, React R
 
 This website is for people who are looking for a website to purchase Bike with special care and their reviews and feedback are most valuable to us. It is important because many people don't have the time to research enough due to the situation of work or other activities in life. This is the best way to help someone to go through their day in better and help them save time.
 
-### `5 Benefits of Using this Website`
+### `Benefits of Using this Website`
 
 This website is created to let people know about Best Bike and let them know we are willing to help them to save the time and trouble. Some of the goal of making this website is given below:
 
@@ -21,5 +21,9 @@ This website is created to let people know about Best Bike and let them know we 
 * A minimum overview of our field of work.
 
 * There is payment option.
+
+* It’s a full-stack website which used firebase for users experience in the website.
+
+* The Bike you would wanna buy can be booked through this website.
 
 * For Admins there are special features.
