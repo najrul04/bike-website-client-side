@@ -9,7 +9,7 @@ const MakeAdmin = () => {
     const {token} = useAuth();
 
     const handleOnBlur = e => {
-
+        e.preventDefault()
         setEmail(e.target.value)
 
     }
